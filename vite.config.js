@@ -1,10 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-    base: '/traffic-ds/',
-    plugins: [react()],
-    server: {
-        port: 5173,
-    },
-});
+  base: '/trafficsense_AI_final/',
+  plugins: [react()],
+})
