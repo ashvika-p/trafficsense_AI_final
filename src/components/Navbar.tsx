@@ -18,14 +18,14 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-primary/40 bg-primary-700/95 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 lg:px-8">
         <NavLink to="/" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/25">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-green text-cream shadow-lg shadow-black/30">
             <HiOutlineSignal className="h-5 w-5" />
           </span>
-          <span className="text-[17px] font-bold tracking-tight text-secondary">
-            TrafficSense <span className="text-primary">AI</span>
+          <span className="text-[17px] font-bold tracking-tight text-cream">
+            TrafficSense <span className="text-cream/80">AI</span>
           </span>
         </NavLink>
 
@@ -62,7 +62,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-slate-200 bg-white px-6 py-4 lg:hidden">
+        <div className="border-t border-primary/40 bg-primary-700 px-6 py-4 lg:hidden">
           <div className="flex flex-col gap-4">
             {navItems.map((item) => (
               <NavLink

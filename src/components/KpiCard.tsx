@@ -26,7 +26,7 @@ export default function KpiCard({
     <div className="card card-hover p-5">
       <div className="flex items-start justify-between">
         <div>
-          <p className="text-sm font-medium text-slate-500">{label}</p>
+          <p className="text-sm font-medium text-cream/55">{label}</p>
           <p className="mt-2 text-3xl font-bold tracking-tight text-secondary">{value}</p>
         </div>
         <div className={`flex h-11 w-11 items-center justify-center rounded-xl ${iconBg} ${iconColor}`}>
@@ -43,7 +43,7 @@ export default function KpiCard({
             {isPositive ? <HiArrowUp className="h-3 w-3" /> : <HiArrowDown className="h-3 w-3" />}
             {Math.abs(change)}%
           </span>
-          <span className="text-xs text-slate-400">{changeLabel}</span>
+          <span className="text-xs text-cream/45">{changeLabel}</span>
         </div>
       )}
     </div>

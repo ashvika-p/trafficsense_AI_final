@@ -5,27 +5,46 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#2563EB',
-          50: '#EFF6FF',
-          100: '#DBEAFE',
-          500: '#2563EB',
-          600: '#1D4ED8',
-          700: '#1E40AF',
+          DEFAULT: '#6C151E',
+          50: '#3D0C12',
+          100: '#4A0E15',
+          500: '#6C151E',
+          600: '#581018',
+          700: '#3D0C12',
         },
-        secondary: '#0F172A',
-        accent: '#14B8A6',
-        success: '#10B981',
-        warning: '#F59E0B',
-        danger: '#EF4444',
-        bg: '#F8FAFC',
-        card: '#FFFFFF',
+        secondary: {
+          DEFAULT: '#F5DABF',
+          50: '#0A1F1D',
+          100: '#0C2A27',
+          600: '#0C302E',
+          700: '#0F3D3A',
+        },
+        green: {
+          DEFAULT: '#0F3D3A',
+          50: '#071412',
+          100: '#0A1F1D',
+          600: '#0C302E',
+          700: '#082422',
+        },
+        accent: '#1A6B65',
+        cream: {
+          DEFAULT: '#F5DABF',
+          50: '#FDF8F0',
+          100: '#F5DABF',
+          200: '#E8C49A',
+        },
+        success: '#1A6B65',
+        warning: '#E8C49A',
+        danger: '#6C151E',
+        bg: '#071412',
+        card: '#140A0C',
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        card: '0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.06)',
-        'card-hover': '0 8px 24px -4px rgba(15, 23, 42, 0.10), 0 2px 8px -2px rgba(15, 23, 42, 0.06)',
+        card: '0 1px 3px 0 rgba(0, 0, 0, 0.35), 0 1px 2px -1px rgba(108, 21, 30, 0.35)',
+        'card-hover': '0 8px 24px -4px rgba(0, 0, 0, 0.45), 0 2px 8px -2px rgba(108, 21, 30, 0.4)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
@@ -45,4 +64,4 @@ export default {
     },
   },
   plugins: [],
-}
+};

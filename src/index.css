@@ -12,8 +12,8 @@ html {
 
 body {
   font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  background-color: #F8FAFC;
-  color: #0F172A;
+  background-color: #071412;
+  color: #F5DABF;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -22,45 +22,45 @@ body {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1F5F9;
+  background: #0A1F1D;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: #6C151E;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: #3D0C12;
 }
 
 @layer components {
   .card {
-    @apply bg-white rounded-2xl border border-slate-200/70 shadow-card;
+    @apply bg-card rounded-2xl border border-primary/30 shadow-card;
   }
   .card-hover {
     @apply transition-all duration-300 hover:shadow-card-hover hover:-translate-y-0.5;
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-cream transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary/40 active:scale-[0.98];
   }
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-white border border-slate-200 px-5 py-2.5 text-sm font-semibold text-secondary transition-all hover:bg-slate-50 hover:border-slate-300 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-green border border-cream/20 px-5 py-2.5 text-sm font-semibold text-cream transition-all hover:bg-green-600 hover:border-cream/35 active:scale-[0.98];
   }
   .badge {
     @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold;
   }
   .input-field {
-    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-secondary placeholder:text-slate-400 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all;
+    @apply w-full rounded-xl border border-cream/15 bg-green-100 px-4 py-2.5 text-sm text-cream placeholder:text-cream/40 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/20 transition-all;
   }
   .label-text {
-    @apply block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1.5;
+    @apply block text-xs font-semibold text-cream/60 uppercase tracking-wide mb-1.5;
   }
   .section-heading {
-    @apply text-3xl md:text-4xl font-bold text-secondary tracking-tight;
+    @apply text-3xl md:text-4xl font-bold text-cream tracking-tight;
   }
   .nav-link {
-    @apply text-sm font-medium text-slate-600 hover:text-secondary transition-colors;
+    @apply text-sm font-medium text-cream/70 hover:text-cream transition-colors;
   }
   .nav-link-active {
-    @apply text-sm font-semibold text-primary;
+    @apply text-sm font-semibold text-cream;
   }
 }

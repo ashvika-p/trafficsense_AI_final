@@ -43,14 +43,14 @@ export default function PredictionPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
       <div className="text-center">
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold text-primary">
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-cream/25 bg-primary/40 px-3 py-1 text-xs font-semibold text-cream">
           <HiOutlineSparkles className="h-3.5 w-3.5" />
           AI Traffic Prediction Engine
         </span>
         <h1 className="mt-4 text-2xl font-bold tracking-tight text-secondary sm:text-3xl">
           Predict Traffic Conditions Anywhere in {city.name}
         </h1>
-        <p className="mx-auto mt-2 max-w-xl text-sm text-slate-500">
+        <p className="mx-auto mt-2 max-w-xl text-sm text-cream/55">
           Enter a location, time, and conditions to generate a real-time AI-powered traffic forecast.
         </p>
       </div>
@@ -115,7 +115,7 @@ export default function PredictionPage() {
                 onChange={(e) => setVehicleCount(Number(e.target.value))}
                 className="w-full accent-primary"
               />
-              <div className="mt-1 flex justify-between text-xs text-slate-400">
+              <div className="mt-1 flex justify-between text-xs text-cream/45">
                 <span>500</span>
                 <span className="font-semibold text-secondary">{vehicleCount.toLocaleString()} vehicles</span>
                 <span>8,000</span>
@@ -137,7 +137,7 @@ export default function PredictionPage() {
                 <HiOutlineSparkles className="h-7 w-7" />
               </div>
               <p className="text-sm font-medium text-secondary">No prediction yet</p>
-              <p className="max-w-xs text-sm text-slate-400">
+              <p className="max-w-xs text-sm text-cream/45">
                 Fill in the inputs and click &ldquo;Generate Prediction&rdquo; to see AI-powered traffic forecasts.
               </p>
             </div>
@@ -146,7 +146,7 @@ export default function PredictionPage() {
           {loading && (
             <div className="card flex h-full min-h-[420px] flex-col items-center justify-center gap-3 p-10">
               <div className="h-10 w-10 animate-spin rounded-full border-4 border-primary/20 border-t-primary" />
-              <p className="text-sm text-slate-500">Running AI model on live inputs...</p>
+              <p className="text-sm text-cream/55">Running AI model on live inputs...</p>
             </div>
           )}
 
@@ -155,29 +155,29 @@ export default function PredictionPage() {
               <div className="card p-6">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Prediction for</p>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-cream/45">Prediction for</p>
                     <h3 className="text-lg font-bold text-secondary">{location}, {city.name} &middot; {time}</h3>
                   </div>
                   <CongestionBadge level={output.congestionLevel} />
                 </div>
 
                 <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
-                  <div className="rounded-2xl bg-slate-50 p-4">
-                    <div className="flex items-center gap-2 text-slate-400">
+                  <div className="rounded-2xl bg-green-100 p-4">
+                    <div className="flex items-center gap-2 text-cream/45">
                       <HiOutlineChartSquareBar className="h-4 w-4" />
                       <span className="text-xs font-medium">Congestion Score</span>
                     </div>
                     <p className="mt-2 text-2xl font-bold text-secondary">{output.congestionScore}%</p>
                   </div>
-                  <div className="rounded-2xl bg-slate-50 p-4">
-                    <div className="flex items-center gap-2 text-slate-400">
+                  <div className="rounded-2xl bg-green-100 p-4">
+                    <div className="flex items-center gap-2 text-cream/45">
                       <HiOutlineClock className="h-4 w-4" />
                       <span className="text-xs font-medium">Predicted Delay</span>
                     </div>
                     <p className="mt-2 text-2xl font-bold text-secondary">{output.predictedDelay} min</p>
                   </div>
-                  <div className="rounded-2xl bg-slate-50 p-4">
-                    <div className="flex items-center gap-2 text-slate-400">
+                  <div className="rounded-2xl bg-green-100 p-4">
+                    <div className="flex items-center gap-2 text-cream/45">
                       <HiOutlineArrowTrendingUp className="h-4 w-4" />
                       <span className="text-xs font-medium">Average Speed</span>
                     </div>
@@ -193,7 +193,7 @@ export default function PredictionPage() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-secondary">AI Recommendation</p>
-                    <p className="mt-1.5 text-sm leading-relaxed text-slate-600">{output.recommendation}</p>
+                    <p className="mt-1.5 text-sm leading-relaxed text-cream/70">{output.recommendation}</p>
                   </div>
                 </div>
               </div>

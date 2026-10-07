@@ -1,9 +1,9 @@
 import type { CongestionLevel } from '../types';
 
 const styles: Record<CongestionLevel, string> = {
-  Low: 'bg-success/10 text-success',
-  Medium: 'bg-warning/10 text-warning',
-  High: 'bg-danger/10 text-danger',
+  Low: 'bg-green/80 text-cream',
+  Medium: 'bg-cream/15 text-cream',
+  High: 'bg-primary text-cream',
 };
 
 const dotStyles: Record<CongestionLevel, string> = {
