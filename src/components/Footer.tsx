@@ -54,7 +54,6 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-cream/15 pt-6 text-xs text-cream/50 md:flex-row">
           <p>&copy; {new Date().getFullYear()} TrafficSense AI. Built for Chennai Smart City.</p>
-          <p>Frontend demo &mdash; all data is simulated for illustrative purposes.</p>
         </div>
       </div>
     </footer>
